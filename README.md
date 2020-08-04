@@ -1,10 +1,10 @@
 # Olá, sou Guilherme Oliveira Casagrande!
 
 ## Quem sou eu? :books:
-Eu sou Guilherme Oliveira Casagrande. Eu sou ainda um programador iniciante em backend com Java e começando a aprender front-end e backend com Javascript. Também curto bastante CS:GO, Valorant e Warframe
+Eu sou Guilherme Oliveira Casagrande. Eu sou ainda um programador iniciante em backend com Java e começando a aprender front-end e backend com Javascript. Também curto bastante CS:GO, Valorant, Warframe e música eletrônica.
 
 ## Com o que eu gostaria de colaborar? :computer:
-Eu gostaria de coloborar em projetos em que eu possa aprofundar meus conhecimentos de desenvolvimento Web usando java (e principalmente spring boot) ou javascript (com node.js e/ou electron) para o backend.
+Eu gostaria de coloborar em projetos em que eu possa aprofundar meus conhecimentos de desenvolvimento Web usando java (e principalmente spring boot) ou javascript (com node.js e/ou electron) para o backend. Estaria ainda mais enteressado se eu fosse colaborar com projetos envolvendo música!
 
 ## Como você pode falar comigo? :satellite:
 Simples!</br>
