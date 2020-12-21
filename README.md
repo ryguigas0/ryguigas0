@@ -1,12 +1,12 @@
-# Olá, sou Guilherme Oliveira Casagrande!
+# Hello, I am Guilherme Oliveira Casagrande!
 
-## Quem sou eu? :books:
-Eu sou Guilherme Oliveira Casagrande. Eu sou ainda um programador iniciante em backend com Java e começando a aprender front-end e backend com Javascript. Também curto bastante CS:GO, Valorant, Warframe e música eletrônica.
+## Who are you? :books:
+I am a lover of programming. I have already tried coding with Flutter, Java, Python, Javascript, Typescript and Lua. I am currently learning the ins and outs of C and coding in Typescript and Javascript and thinking about coming back to Java. I also love playing cs:go, hotline miami, my friend pedro, warframe and halo.
 
-## Com o que eu gostaria de colaborar? :computer:
-Eu gostaria de coloborar em projetos em que eu possa aprofundar meus conhecimentos de desenvolvimento Web usando java (e principalmente spring boot) ou javascript (com node.js e/ou electron) para o backend. Estaria ainda mais enteressado se eu fosse colaborar com projetos envolvendo música!
+## How can you help me? :computer:
+I could help in designing ideas and projects, coding in Typescript or Javascript mainly, a bit of Java, C and Flutter.
 
-## Como você pode falar comigo? :satellite:
-Simples!</br>
-Ou por email: [![Gmail Badge](https://img.shields.io/badge/-guiolicasa@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:guiolicasa@gmail.com)](mailto:guiolicasa@gmail.com)</br>
-E aqui no LinkedIn também: [![Linkedin Badge](https://img.shields.io/badge/-GuilhermeCasagrande-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guilherme-casagrande-826691190/)](https://www.linkedin.com/in/guilherme-casagrande-826691190/) </br>
+## How can I contact you? :satellite:
+Simple!</br>
+By email: [![Gmail Badge](https://img.shields.io/badge/-guiolicasa@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:guiolicasa@gmail.com)](mailto:guiolicasa@gmail.com)</br>
+Or LinkedIn too: [![Linkedin Badge](https://img.shields.io/badge/-GuilhermeCasagrande-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guilherme-casagrande-826691190/)](https://www.linkedin.com/in/guilherme-casagrande-826691190/) </br>
