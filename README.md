@@ -9,7 +9,7 @@ I am a lover of computer science. I have already tried coding with Flutter, Java
 ## I can help you with... :computer:
 I can help in designing new projects or solving algorithimic problems, I can help even better if its in Javascript, Typescript or Golang
 
-## How can I contact you? :satellite:
+## Contact :satellite:
 [![Protonmail Badge](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)]( guigacasa@protonmail.ch)
 [![Linkedin Badge](https://img.shields.io/badge/-GuilhermeCasagrande-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guigacasa-megastack/)](https://www.linkedin.com/in/guigacasa-megastack/) </br>
 Discord: ryguigas#4282
