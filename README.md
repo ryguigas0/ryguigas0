@@ -6,6 +6,25 @@
 ## Who I am? :bulb:
 I am a lover of computer science. I have already tried coding with Flutter, Java, Python, Javascript, Typescript, Lua, C. I am currently trying to be a golang pro, learn the basics of computer science and become a Megafullstack (A programmer that has a sense of every area, from robotics to hardware design and web deving). I also love playing cs:go, hotline miami, my friend pedro, warframe and halo. Recently moved in with manjaro cinnamon, loving it.
 
+## Code from learning materials :books:
+- https://github.com/ryguigas0/HeadsUpC
+- https://github.com/ryguigas0/nextLevelWeek2/tree/master/nlw
+
+## Frontend projects that you can access now!
+- https://patient-list.glitch.me/
+- https://my-js-clock.glitch.me/
+
+## Projects to download and run
+- https://github.com/ryguigas0/go-bulk-renamer
+- https://github.com/ryguigas0/anondrive-centralized
+- https://github.com/ryguigas0/dmbackup
+- https://github.com/ryguigas0/go-dice-roller-bot
+- https://github.com/ryguigas0/passwd-genie
+
+## Some contributions I made along the way :handshake:
+- https://github.com/ryguigas0/algo_ds_101
+- https://github.com/ryguigas0/bookeep
+
 ## I can help you with... :computer:
 I can help in designing new projects or solving algorithimic problems, I can help even better if its in Javascript, Typescript or Golang
 
