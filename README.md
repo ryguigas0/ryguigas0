@@ -4,7 +4,9 @@
 
 
 ## Who I am? :bulb:
-I am a lover of computer science. I have already tried coding with Flutter, Java, Python, Javascript, Typescript, Lua, C. I am currently trying to be a golang pro, learn the basics of computer science and become a Megafullstack (A programmer that has a sense of every area, from robotics to hardware design and web deving). I also love playing cs:go, hotline miami, my friend pedro, warframe and halo. Recently moved in with manjaro cinnamon, loving it.
+I am a lover of computer programming. 
+I have already tried coding with Flutter, Java, Python, Javascript, Typescript, Lua, C and Go. I am currently trying to be a [elixir](https://elixir-lang.org/) pro, learn the basics of computer science and become a Megafullstack (A programmer that has a sense of every area, from robotics to hardware design and web deving). 
+I also love playing cs:go, hotline miami, my friend pedro, warframe and halo infinite multiplayer. Recently moved in with dual booting Linux Mint and WSL2 Ubuntu, loving it.
 
 ## Code from learning materials :books:
 - https://github.com/ryguigas0/HeadsUpC
