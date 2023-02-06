@@ -1,37 +1,31 @@
-# Hello, I am Guilherme Oliveira Casagrande!
-![Profile views](https://gpvc.arturio.dev/ryguigas0)
-[![GitHub followers](https://img.shields.io/github/followers/ryguigas0.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/ryguigas0?tab=followers)
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
+# Hello, I am Guilherme Oliveira Casagrande!
+<div>
+<a href="https://github.com/ryguigas0">
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ryguigas0&layout=compact&langs_count=7&theme=dracula"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=ryguigas0&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+</div>
+</a>
 
 ## Who I am? :bulb:
-I am a lover of computer programming. 
-I have already tried coding with Flutter, Java, Python, Javascript, Typescript, Lua, C and Go. I am currently trying to be a [elixir](https://elixir-lang.org/) pro, learn the basics of computer science and become a Megafullstack (A programmer that has a sense of every area, from robotics to hardware design and web deving). 
-I also love playing cs:go, hotline miami, my friend pedro, warframe and halo infinite multiplayer. Recently moved in with dual booting Linux Mint and WSL2 Ubuntu, loving it.
+I am an eternal student and learner, and currently love studying programming, playing character-driven games and dungeon mastering tabletop RPGs.
 
-## Code from learning materials :books:
-- https://github.com/ryguigas0/HeadsUpC
-- https://github.com/ryguigas0/nextLevelWeek2/tree/master/nlw
+## My expirience :books:
 
-## Frontend projects that you can access now!
-- https://patient-list.glitch.me/
-- https://my-js-clock.glitch.me/
+### High experience level
+### Medium expirience level
 
-## Projects to download and run
-- https://github.com/ryguigas0/go-bulk-renamer
-- https://github.com/ryguigas0/anondrive-centralized
-- https://github.com/ryguigas0/dmbackup
-- https://github.com/ryguigas0/go-dice-roller-bot
-- https://github.com/ryguigas0/passwd-genie
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original.svg" width="40" height="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" width="40"/>
 
-## Some contributions I made along the way :handshake:
-- https://github.com/ryguigas0/algo_ds_101
-- https://github.com/ryguigas0/bookeep
-
-## I can help you with... :computer:
-I can help in designing new projects or solving algorithimic problems, I can help even better if its in Javascript, Typescript or Golang
-
-## Contact :satellite:
-[![Protonmail Badge](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)]( guigacasa@protonmail.ch)
-[![Linkedin Badge](https://img.shields.io/badge/-GuilhermeCasagrande-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guigacasa-megastack/)](https://www.linkedin.com/in/guigacasa-megastack/) </br>
-
-THANK YOU FOR READING
+### Low experience level
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" width="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" width="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" width="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" height="40" width="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" height="40" width="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="40" width="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" width="40"/>
