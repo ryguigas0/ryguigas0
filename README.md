@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
 # Hello, I am Guilherme Oliveira Casagrande!
+I am an eternal student and learner, and currently love studying programming, playing character-driven games and dungeon mastering tabletop RPGs.
+
 <div>
 <a href="https://github.com/ryguigas0">
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ryguigas0&layout=compact&langs_count=7&theme=dracula"/>
@@ -8,12 +10,9 @@
 </div>
 </a>
 
-## Who I am? :bulb:
-I am an eternal student and learner, and currently love studying programming, playing character-driven games and dungeon mastering tabletop RPGs.
+## My experience :books:
 
-## My expirience :books:
-
-### High experience level
+<!-- ### High experience level -->
 ### Medium expirience level
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/>
