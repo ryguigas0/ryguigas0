@@ -3,12 +3,9 @@
 # Hello, I am Guilherme Oliveira Casagrande!
 I am an eternal student and learner, and currently love studying programming, playing character-driven games and dungeon mastering tabletop RPGs.
 
-<div>
-<a href="https://github.com/ryguigas0">
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ryguigas0&layout=compact&langs_count=7&theme=dracula"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=ryguigas0&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-</div>
-</a>
+![Guilherme's GitHub stats](https://github-readme-stats.vercel.app/api?username=ryguigas0&show_icons=true&theme=dracula&count_private=true,prs)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ryguigas0&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&layout=compact)
 
 ## My experience :books:
 
