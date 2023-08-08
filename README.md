@@ -10,7 +10,7 @@ Learning how to be better at:
 - Learning from people 🧑‍💻🙏🧑‍💼
 - Researching learning materials 🧑‍💻🔎🌐
 
-## My programming expirience
+## My programming experience
 
 ![Guilherme's GitHub stats](https://github-readme-stats.vercel.app/api?username=ryguigas0&show_icons=true&theme=dracula&count_private=true,prs)
 
