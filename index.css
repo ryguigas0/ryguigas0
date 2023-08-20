@@ -1,0 +1,28 @@
+.main {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.content {
+	height: 100%;
+}
+
+.p-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 10%;
+}
+
+p {
+	padding-bottom: 2rem;
+	max-width: 60ch; /*Better readablitiy -> max 75 characters per line*/
+	font-size: 25px;
+}
+
+.follow {
+	position: sticky;
+	height: min-content;
+	padding-left: 3rem;
+	top: 0;
+}
