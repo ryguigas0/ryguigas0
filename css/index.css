@@ -3,21 +3,47 @@
 }
 
 .profile {
-	width: 124px;
-	height: 124px;
+	width: 60%;
 	transform: rotateY(180deg);
 	border-radius: 20px;
 	border: 5px #090070 solid;
 }
 
 .expertise-description {
-	word-wrap: break-word;
-	max-width: 250px;
-	margin-left: 20%;
-	margin-right: 20%;
+	width: 5ch;
+}
+
+.about-me {
+	width: 270px;
+}
+
+a.title-link {
+	color: #0074BD;
+	text-decoration: none;
+	font-style: normal;
+	font-size: 27px;
+	text-transform: none;
+	font-weight: 700 !important;
+}
+
+a.title-link:visited {
+	color: #0074BD;
+}
+
+a.title-link:hover {
+	color: #0092ed;
+}
+
+a.social {
+	width: 4.4rem;
 }
 
 @media (max-width: 992px) {
+	.profile {
+		width: 124px;
+		height: 124px;
+	}
+
 	html {
 		font-size: 16px;
 	}
@@ -30,25 +56,7 @@
 		font-size: 23px;
 	}
 
-	a.title-link {
-		color: #0074BD;
-		text-decoration: none;
-		font-style: normal;
-		text-transform: none;
-		font-size: 27px;
-		font-weight: 700 !important;
-	}
-
-	a.title-link:visited {
-		color: #0074BD;
-	}
-
-	a.title-link:hover {
-		color: #0092ed;
-	}
-
 	a.social {
 		width: 4.4rem;
 	}
-
 }
