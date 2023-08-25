@@ -46,4 +46,9 @@
 	a.title-link:hover {
 		color: #0092ed;
 	}
+
+	a.social {
+		width: 4.4rem;
+	}
+
 }
