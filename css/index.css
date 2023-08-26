@@ -4,6 +4,30 @@
 	line-height: 30px;
 }
 
+/* bootstrap spans resize font to h1 font size */
+h1>span {
+	font-size: calc(1.375rem + 1.5vw);
+}
+
+/*Carriet blinking animation*/
+
+@keyframes carriet {
+	from {
+		opacity: 1.0;
+	}
+
+	to {
+		opacity: 0.0;
+	}
+}
+
+span#carriet {
+	animation-name: carriet;
+	animation-duration: 600ms;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
 .profile {
 	width: 60%;
 	transform: rotateY(180deg);
@@ -52,9 +76,5 @@ a.social {
 
 	h2 {
 		font-size: 23px;
-	}
-
-	a.social {
-		width: 4.4rem;
 	}
 }
