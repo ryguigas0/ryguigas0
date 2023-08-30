@@ -1,20 +1,9 @@
 console.log("index.js imported")
 
+// Greeting message
+
 const nowHours = (new Date()).getHours()
-
-const avaliablePositions = [
-    "Engenheiro de Software",
-    "Desenvolvedor Fullstack",
-    "Desenvolvedor Backend",
-    "Desenvolvedor Frontend",
-    "Mestre de RPG",
-    "Dev Freelancer"
-]
-
-let positionIndex = 1
-
 let greetingElement = document.querySelector("#greeting")
-let positionsElement = document.querySelector("#positions")
 
 function setGreentingText() {
     let greetingMessage = "Olá"
@@ -30,36 +19,64 @@ function setGreentingText() {
     greetingElement.textContent = greetingMessage
 }
 
+// Shifting job positions
 
-async function transitionPosition() {
-    await sleep(2000)
-
-    for (let i = positionsElement.textContent.length; i >= 0; i--) {
-        await sleep(100)
-        positionsElement.textContent = positionsElement.textContent.slice(0, i)
+let jobPositions = [
+    "Engenheiro de Software",
+    "Desenvolvedor Fullstack",
+    "Desenvolvedor Backend",
+    "Desenvolvedor Frontend",
+    "Mestre de RPG",
+    "Dev Freelancer"
+]
+let jobPositionIndex = 1
+let letterIndex = jobPositions[0].length - 1 // starting erasing index
+let positionsElement = document.querySelector("#positions")
+let mode = 2 // 0 -> erase, 1 -> write, 2 -> wait
+let wait = 0
+let modeFunction = [
+    function () {
+        // erasing
+        if (!positionsElement.textContent.length)
+            mode = 1
+        else {
+            positionsElement.textContent = positionsElement.textContent.slice(0, letterIndex)
+            letterIndex--
+        }
+    },
+    function () {
+        // writing
+        let writePostion = jobPositions[jobPositionIndex]
+        if (writePostion.length > positionsElement.textContent.length) {
+            positionsElement.textContent += writePostion.charAt(letterIndex)
+            letterIndex++
+        } else {
+            mode = 2
+            if (jobPositionIndex == jobPositions.length - 1) {
+                jobPositionIndex = 0
+            } else {
+                jobPositionIndex++
+            }
+            letterIndex = jobPositions[jobPositionIndex].length - 1
+        }
+    },
+    function () {
+        // wating
+        if (wait === 30) {
+            mode = 0
+            wait = 0
+        } else
+            wait++
     }
+]
 
-    let nextPosition = avaliablePositions[positionIndex]
+function updateJobPosition() {
+    let currModeFuncion = modeFunction[mode]
 
-
-    for (let i = 0; i < nextPosition.length; i++) {
-        await sleep(100)
-        positionsElement.textContent += nextPosition.charAt(i)
-    }
-
-    positionIndex++
-
-    if (positionIndex == avaliablePositions.length) {
-        positionIndex = 0
-    }
+    currModeFuncion()
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms))
-}
-
+// Startup
 setGreentingText()
 
-transitionPosition()
-
-setInterval(transitionPosition, 7000)
+setInterval(updateJobPosition, 100)
