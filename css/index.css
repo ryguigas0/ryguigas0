@@ -73,6 +73,10 @@ a.social {
 		height: 124px;
 	}
 
+	.intro {
+		height: 7rem;
+	}
+
 	h1 {
 		font-size: 27px;
 	}
