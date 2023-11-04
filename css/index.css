@@ -71,6 +71,10 @@ a.social {
 	width: 4.4rem;
 }
 
+.download-msg {
+	max-width: 60ch;
+}
+
 @media (max-width: 992px) {
 	.profile {
 		width: 124px;
