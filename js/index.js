@@ -2,22 +2,22 @@ console.log("index.js imported")
 
 // Greeting message
 
-const nowHours = (new Date()).getHours()
-let greetingElement = document.querySelector("#greeting")
+// const nowHours = (new Date()).getHours()
+// let greetingElement = document.querySelector("#greeting")
 
-function setGreentingText() {
-    let greetingMessage = "Olá"
+// function setGreentingText() {
+//     let greetingMessage = "Olá"
 
-    if ((nowHours >= 0 && nowHours <= 6) || (nowHours > 18 && nowHours <= 23)) {
-        greetingMessage = "Boa noite!"
-    } else if (nowHours > 6 && nowHours <= 12) {
-        greetingMessage = "Bom dia!"
-    } else if (nowHours > 12 && nowHours <= 18) {
-        greetingMessage = "Boa tarde!"
-    }
+//     if ((nowHours >= 0 && nowHours <= 6) || (nowHours > 18 && nowHours <= 23)) {
+//         greetingMessage = "Boa noite!"
+//     } else if (nowHours > 6 && nowHours <= 12) {
+//         greetingMessage = "Bom dia!"
+//     } else if (nowHours > 12 && nowHours <= 18) {
+//         greetingMessage = "Boa tarde!"
+//     }
 
-    greetingElement.textContent = greetingMessage
-}
+//     greetingElement.textContent = greetingMessage
+// }
 
 // Shifting job positions
 
@@ -77,6 +77,6 @@ function updateJobPosition() {
 }
 
 // Startup
-setGreentingText()
+// setGreentingText()
 
 setInterval(updateJobPosition, 100)
