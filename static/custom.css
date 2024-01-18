@@ -23,6 +23,10 @@
     width: 100%;
 }
 
+p {
+    text-align: justify;
+}
+
 @media (min-width: 576px) {
     .portfolio-link {
         width: 40%;
