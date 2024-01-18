@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://ryguigas0.github.io/ryguigas0/images/welcome.png" width="50%"/>
+  <img src="https://ryguigas0.github.io/ryguigas0/static/readme/welcome.png" width="50%"/>
 </div>
 
 # Hello, I'm Guiga!
