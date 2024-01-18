@@ -75,13 +75,16 @@
                         data-bs-target="#experience-modal">
                         🧑‍💼 Experiência acadêmica & profissional
                     </a>
-                    <a href="/stack" class="col-12 col-md-6 mx-1 mt-2 btn btn-outline-dark">
+                    <a type="button" class="col-12 col-md-6 mx-1 mt-2 btn btn-outline-dark" data-bs-toggle="modal"
+                        data-bs-target="#knowledge-modal">
                         🖥️ Conhecimentos
                     </a>
-                    <a href="/projects" class="col-12 col-md-6 mx-1 mt-2 btn btn-outline-dark">
+                    <a type="button" class="col-12 col-md-6 mx-1 mt-2 btn btn-outline-dark" data-bs-toggle="modal"
+                        data-bs-target="#projects-modal">
                         👷‍♂️ Projetos
                     </a>
-                    <a href="/about" class="col-12 col-md-6 mx-1 mt-2 btn btn-outline-dark">
+                    <a type="button" class="col-12 col-md-6 mx-1 mt-2 btn btn-outline-dark" data-bs-toggle="modal"
+                        data-bs-target="#about-modal">
                         🤔 Quem sou eu?
                     </a>
                 </div>
@@ -129,8 +132,8 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Experiência acadêmica &
-                            profissional</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">🧑‍💼 Experiência acadêmica & profissional
+                        </h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -157,6 +160,57 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Knowledge modal -->
+        <div class="modal fade" id="knowledge-modal" tabindex="-1" aria-labelledby="knowledge-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">🖥️ Conhecimentos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Modal content -->
+                        <div class="container-fluid">
+                            Knowledge
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projects modal -->
+        <div class="modal fade" id="projects-modal" tabindex="-1" aria-labelledby="project-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">👷‍♂️ Projetos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Modal content -->
+                        <div class="container-fluid">
+                            Projects
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About modal -->
+        <div class="modal fade" id="about-modal" tabindex="-1" aria-labelledby="about-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">🤔 Quem sou eu?</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Modal content -->
+                        <div class="container-fluid">
+                            About
                         </div>
                     </div>
                 </div>
