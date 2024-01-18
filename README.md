@@ -1,7 +1,6 @@
 <div align="center">
-  <img src="https://ryguigas0.github.io/ryguigas0/images/welcome.png" width="50%"/>
+  <img src="https://ryguigas0.github.io/ryguigas0/static/welcome.png" width="50%"/>
 </div>
-
 # Hello, I'm Guiga!
 
 Learning how to be better at:
