@@ -15,7 +15,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script>
-        $(window).on('load', () => $('#experience-modal').modal('show'))
+        $(window).on('load', () => $('#projects-modal').modal('show'))
     </script>
 </head>
 
@@ -53,7 +53,8 @@
                 <!-- Working at ... -->
                 <div class="row pt-2">
                     <div class="col">
-                        Sou desenv. backend freelancer @ <a href="https://lihai.com.br/" class="wcontent">LiHai</a>
+                        Sou desenv. backend freelancer @ <a target="_blank" rel="noopener noreferrer"
+                            href="https://lihai.com.br/" class="wcontent">LiHai</a>
                     </div>
                 </div>
                 <!-- Studying ... -->
@@ -149,7 +150,7 @@
                                                         <div
                                                             class="d-flex flex-column align-center h-100 justify-content-center">
                                                             <div>
-                                                                <img src="/static/espm.jpg" alt="ESPM"
+                                                                <img src="/static/experience/espm.jpg" alt="ESPM"
                                                                     class="rounded-circle w-75">
                                                             </div>
                                                         </div>
@@ -182,7 +183,8 @@
                                                             class="d-flex flex-column align-center w-75 h-100 justify-content-center">
                                                             <div class="rounded-circle"
                                                                 style="background-color: black;">
-                                                                <img src="/static/lihai.svg" alt="LiHai" class="m-1">
+                                                                <img src="/static/experience/lihai.svg" alt="LiHai"
+                                                                    class="m-1">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -238,79 +240,190 @@
                     <div class="modal-body">
                         <!-- Modal content -->
                         <div class="container-fluid">
-                            Projects
+                            <div class="row gy-3">
+                                <div class="col-12">
+                                    <!-- Project cards -->
+                                    <div class="card border-dark border-2">
+                                        <img src="static/projects/iggpl.png" class="card-img-top" alt="IGGPL Website">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IGGPL - Raspagem de imóveis de luxo</h5>
+                                            <p class="card-text">Extração de imóveis de luxo de São Paulo, SP,
+                                                transformação com APIs do GCP e carregamento para uma API REST e website
+                                            </p>
+                                            <div class="container-fluid pt-2">
+                                                <div class="row">
+                                                    <!-- GitHub -->
+                                                    <div class="col">
+                                                        <a href="https://github.com/ryguigas0/whhu-espm" target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            class="btn btn-outline-dark fs-30px">
+                                                            <i class="bi bi-github"></i>
+                                                        </a>
+                                                    </div>
+                                                    <!-- Presentation -->
+                                                    <div class="col">
+                                                        <div class="col">
+                                                            <a href="https://drive.google.com/file/d/1jY30zxtq5F5oS47Ulbil65zf4zW3I0Xl/view?usp=sharing"
+                                                                target="_blank" rel="noopener noreferrer"
+                                                                class="btn  btn-outline-warning fs-30px">
+                                                                <i class="bi bi-easel"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card border-dark border-2">
+                                        <img src="static/projects/whhu.png" class="card-img-top" alt="WHHU Dashboard">
+                                        <div class="card-body">
+                                            <h5 class="card-title">WHHU - Estação meteorológica</h5>
+                                            <p class="card-text">Estação meteorológica que capta humidade e
+                                                temperatura
+                                                do ambiente e disponibiliza em uma API e um dashboard web</p>
+                                            <div class="container-fluid pt-2">
+                                                <div class="row">
+                                                    <!-- GitHub -->
+                                                    <div class="col">
+                                                        <a href="https://github.com/ryguigas0/whhu-espm" target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            class="btn btn-outline-dark fs-30px">
+                                                            <i class="bi bi-github"></i>
+                                                        </a>
+                                                    </div>
+                                                    <!-- Linkedin -->
+                                                    <div class="col">
+                                                        <a href="https://whhu-espm.glitch.me/" target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            class="btn  btn-outline-dark fs-30px">
+                                                            <i class="bi bi-display"></i>
+                                                        </a>
+                                                    </div>
+                                                    <!-- YouTube-->
+                                                    <div class="col">
+                                                        <a href="https://youtu.be/XUlu15k1XNk" target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            class="btn  btn-outline-danger fs-30px">
+                                                            <i class="bi bi-youtube"></i>
+                                                        </a>
+                                                    </div>
+                                                    <!-- Presentation -->
+                                                    <div class="col">
+                                                        <div class="col">
+                                                            <a href="https://drive.google.com/file/d/1sd7IQ8UheSxqd_TSX4FUfBhFivqKRAh2/view?usp=sharing"
+                                                                target="_blank" rel="noopener noreferrer"
+                                                                class="btn  btn-outline-warning fs-30px">
+                                                                <i class="bi bi-easel"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card border-dark border-2">
+                                        <img src="static/projects/labs_pgt.png" class="card-img-top"
+                                            alt="Gerenciador de PGT">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Gerenciador de PGTs </h5>
+                                            <p class="card-text">Um gerenciador de PGTs para automatizar criação de
+                                                PGTs, notas e atas</p>
+                                            <div class="container-fluid pt-2">
+                                                <div class="row">
+                                                    <!-- GitHub -->
+                                                    <div class="col">
+                                                        <a href="https://github.com/tech-espm/labs-pgt" target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            class="btn btn-outline-dark fs-30px">
+                                                            <i class="bi bi-github"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- About modal -->
-        <div class="modal fade" id="about-modal" tabindex="-1" aria-labelledby="about-modal" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">🤔 Quem sou eu?</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Modal content -->
-                        <div class="container-fluid">
-                            <div class="row">
-                                <h2>A resposta curta</h2>
-                                <p class="fs-3 text-start">
-                                    Eu amo incorporar as
-                                    histórias de
-                                    pessoas
-                                    ao meu redor, programar e ser
-                                    saudável. <span class="fw-bold">Vamos trabalhar juntos?</span>
-                                </p>
+            <!-- About modal -->
+            <div class="modal fade" id="about-modal" tabindex="-1" aria-labelledby="about-modal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">🤔 Quem sou eu?</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Modal content -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <h2>A resposta curta</h2>
+                                    <p class="fs-3 text-start">
+                                        Eu amo incorporar as
+                                        histórias de
+                                        pessoas
+                                        ao meu redor, programar e ser
+                                        saudável. <span class="fw-bold">Vamos trabalhar juntos?</span>
+                                    </p>
 
-                                <h2>A resposta longa</h2>
-                                <p>
-                                    Adoro qualquer mídia que me conta uma história boa e ainda mais se eu possa
-                                    participar e
-                                    chamar meus amigos, como séries animadas (arcane, samurai de olhos azuis,
-                                    departamento
-                                    de
-                                    conspirações), jogos de computador (warframe, baldurs gate, celeste) e jogos de mesa
-                                    (o
-                                    som
-                                    das seis, city of mist, ordem paranormal).
-                                </p>
+                                    <h2>A resposta longa</h2>
+                                    <p>
+                                        Adoro qualquer mídia que me conta uma história boa e ainda mais se eu possa
+                                        participar e
+                                        chamar meus amigos, como séries animadas (arcane, samurai de olhos azuis,
+                                        departamento
+                                        de
+                                        conspirações), jogos de computador (warframe, baldurs gate, celeste) e jogos de
+                                        mesa
+                                        (o
+                                        som
+                                        das seis, city of mist, ordem paranormal).
+                                    </p>
 
-                                <p>
-                                    Também adoro fazer parte da história de outras pessoas por meio da programação no
-                                    trabalho,
-                                    no acadêmico e no hobby. Eu não me limito sobre o que programar, porque eu quero
-                                    colocar
-                                    um
-                                    dedo em quase tudo. Também prezo por ouvir e entender bem as lições e experiências
-                                    que
-                                    as
-                                    pessoas me contam e escrevem para aprender e nunca esquecer.
-                                </p>
+                                    <p>
+                                        Também adoro fazer parte da história de outras pessoas por meio da programação
+                                        no
+                                        trabalho,
+                                        no acadêmico e no hobby. Eu não me limito sobre o que programar, porque eu quero
+                                        colocar
+                                        um
+                                        dedo em quase tudo. Também prezo por ouvir e entender bem as lições e
+                                        experiências
+                                        que
+                                        as
+                                        pessoas me contam e escrevem para aprender e nunca esquecer.
+                                    </p>
 
-                                <p>
-                                    Gosto também de me manter saudável fazendo bastante exercício e comendo as melhores
-                                    comidas
-                                    saudáveis e refletir bastante sobre como a minha cabeça, mente e corpo funcionam
-                                    juntos
-                                    para
-                                    aprender.
+                                    <p>
+                                        Gosto também de me manter saudável fazendo bastante exercício e comendo as
+                                        melhores
+                                        comidas
+                                        saudáveis e refletir bastante sobre como a minha cabeça, mente e corpo funcionam
+                                        juntos
+                                        para
+                                        aprender.
 
-                                    <span class="fw-bold">
-                                        Enfim, não esqueça de me contatar para eu conhecer a sua história e criarmos um
-                                        projeto
-                                        juntos!
-                                    </span>
-                                </p>
+                                        <span class="fw-bold">
+                                            Enfim, não esqueça de me contatar para eu conhecer a sua história e criarmos
+                                            um
+                                            projeto
+                                            juntos!
+                                        </span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 
