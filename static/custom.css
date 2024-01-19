@@ -1,0 +1,34 @@
+.row {
+    justify-content: center;
+}
+
+.wcontent {
+    width: fit-content;
+}
+
+
+.fs-0 {
+    font-size: xx-large;
+}
+
+.fs-30px {
+    font-size: 30px;
+}
+
+.fs-5rem {
+    font-size: 5rem;
+}
+
+.portfolio-link {
+    width: 100%;
+}
+
+p {
+    text-align: justify;
+}
+
+@media (min-width: 576px) {
+    .portfolio-link {
+        width: 40%;
+    }
+}

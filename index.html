@@ -1,102 +1,639 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/index.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-	<script src="./js/index.js" defer></script>
-	<title>Guiga - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guigadev</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/static/custom.css">
+
+    <!-- jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <!-- DevIcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Popperjs -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(window).on('load', () => {
+            // Enable popovers
+            $('[data-bs-toggle="popover"]').map(function () {
+                return new bootstrap.Popover(this)
+            })
+
+            // Debug
+            $('#knowledge-modal').modal('show')
+        })
+    </script>
 </head>
 
-<body class="container-fluid">
-	<div class="row flex-column align-items-center text-center mt-2 mb-3">
-		<div class="col-sm-9 pt-2">
-			<h1>👋Olá, sou Guilherme e<br><span id="positions">Engenheiro de Software</span><span
-					id="carriet">|</span></h1>
-		</div>
-		<div class="col pt-4">
-			<h1>Quem sou eu?</h1>
-			<div class="row align-items-center justify-content-center pt-sm-3">
-				<div class="col-12 col-sm-6 col-md-4 about-me">
-					<ul class="text-start">
-						<li>4º Semestre de Sistemas de Informação na ESPM</li>
-						<li>Desenvolvedor Web Freelancer na LiHai (antes GETMORE) com sistemas de gamificação há 2
-							anos</li>
-						<li>Adoro trabalhar com pessoas diversas que podem aprender comigo e me ensinar</li>
-						<li>Mestre / Jogador de RPG de mesa</li>
-					</ul>
-				</div>
-				<div class="col-12 col-sm-3">
-					<img src="static/me.jpeg" alt="Guilherme Oliveira Casagrande" class="profile m-1">
-				</div>
-			</div>
-		</div>
-		<div class="col pt-4">
-			<h1>📚Minha expertise</h1>
-			<div class="row row-cols-1 justify-content-center">
-				<div class="col-9 col-sm-4">
-					<div class="row">
-						<h2>Intermediário</h2>
-						<div class="expertise-description">Elixir, SQL</div>
-					</div>
-				</div>
-				<div class="col-9 col-sm-4">
-					<div class="row">
-						<h2>Básico</h2>
-						<div class="expertise-description">HTML, CSS, Javascript, Typescript, Bootstrap, Java, UML,
-							Git</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col pt-4">
-			<h1>🔗Meus links</h1>
-			<div class="row flex-sm-row-reverse align-items-center justify-content-center">
-				<div class="col-xs-4 col-sm-3">
-					<div class="row d-flex flex-column">
-						<!-- <div class="col pt-2">
-							<a href="repos.html" class="title-link">🧑‍💻 Meus projetos →</a>
-						</div> -->
-						<div class="col pt-2">
-							<a href="cv.html" class="title-link">📄 Currículo (PDF) →</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-4 col-sm-3 pt-4">
-					<!-- <h2>Onde me acompanhar</h2> -->
-					<div class="container p-2">
-						<div class="row flex-row justify-content-center">
-							<a href="https://www.linkedin.com/in/guigadev/" class="social col-6">
-								<svg viewBox="0 0 128 128">
-									<path fill="#0076b2"
-										d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z">
-									</path>
-									<path fill="#fff"
-										d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z">
-									</path>
-								</svg>
-							</a>
-							<a href="https://github.com/ryguigas0" class="social col-6">
-								<svg viewBox="0 0 128 128">
-									<g fill="#181616">
-										<path fill-rule="evenodd" clip-rule="evenodd"
-											d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z">
-										</path>
-										<path
-											d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0">
-										</path>
-									</g>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<body>
+    <div class="container text-center">
+        <div class="row pt-1">
+            <!-- Image -->
+            <div class="col-6 col-sm-3 col-md-2">
+                <img src="https://avatars.githubusercontent.com/u/32659090?v=4" alt="Eu"
+                    class="img-thumbnail rounded mx-auto d-block border-black border-4 p-0">
+            </div>
+            <!-- Info -->
+            <div class="container">
+                <div class="row pt-2">
+                    <!-- Name -->
+                    <h1>Guilherme Casagrande</h1>
+                    <!-- Current job title -->
+                    <h2>Eng. de Software</h2>
+                </div>
+                <!-- Pins -->
+                <div class="row">
+                    <span class="m-1 fs-6 badge rounded-pill text-bg-primary wcontent">
+                        Python
+                    </span>
+                    <span class="m-1 fs-6 badge rounded-pill text-bg-primary wcontent">
+                        Java
+                    </span>
+                    <span class="m-1 fs-6 badge rounded-pill text-bg-primary wcontent">
+                        Javascript
+                    </span>
+                    <span class="m-1 fs-6 badge rounded-pill text-bg-primary wcontent">
+                        Elixir
+                    </span>
+                </div>
+                <!-- Working at ... -->
+                <div class="row pt-2">
+                    <div class="col">
+                        Sou desenv. backend freelancer @ <a target="_blank" rel="noopener noreferrer"
+                            href="https://lihai.com.br/" class="wcontent">LiHai</a>
+                    </div>
+                </div>
+                <!-- Studying ... -->
+                <div class="row">
+                    <div class="col">
+                        Estou estudando Engenharia de dados
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio links -->
+            <div class="container pt-3 pt-sm-1 px-4">
+                <div class="row">
+                    <a href="/static/cv_pt-BR.pdf" download="CV - Guilherme Oliveira Casagrande"
+                        class="col-12 col-md-6 mx-1 mt-2 btn btn-outline-dark">
+                        📄 Baixar currículo
+                    </a>
+                    <!-- Professional experience -->
+                    <a type="button" class="col-12 col-md-6 mx-1 mt-2 btn btn-outline-dark" data-bs-toggle="modal"
+                        data-bs-target="#experience-modal">
+                        🧑‍💼 Experiência acadêmica & profissional
+                    </a>
+                    <a type="button" class="col-12 col-md-6 mx-1 mt-2 btn btn-outline-dark" data-bs-toggle="modal"
+                        data-bs-target="#knowledge-modal">
+                        🖥️ Conhecimentos
+                    </a>
+                    <a type="button" class="col-12 col-md-6 mx-1 mt-2 btn btn-outline-dark" data-bs-toggle="modal"
+                        data-bs-target="#projects-modal">
+                        👷‍♂️ Projetos
+                    </a>
+                    <a type="button" class="col-12 col-md-6 mx-1 mt-2 btn btn-outline-dark" data-bs-toggle="modal"
+                        data-bs-target="#about-modal">
+                        🤔 Quem sou eu?
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Social links -->
+        <div class="container-fluid pt-3">
+            <div class="row gx-2">
+                <!-- GitHub -->
+                <div class="col col-md-1">
+                    <a href="https://github.com/ryguigas0" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline-dark fs-30px">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+                <!-- Linkedin -->
+                <div class="col col-md-1">
+                    <a href="https://www.linkedin.com/in/guigadev/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline-primary fs-30px">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+                <!-- More links -->
+                <!--
+                    <div class="col">
+                        <a href="https://github.com/ryguigas0" class="btn btn-outline-dark fs-0">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://github.com/ryguigas0" class="btn btn-outline-dark fs-0">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://github.com/ryguigas0" class="btn btn-outline-dark fs-0">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div> -->
+            </div>
+        </div>
+        <!-- Professional experience modal -->
+        <div class="modal fade" id="experience-modal" tabindex="-1" aria-labelledby="experience-modal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">🧑‍💼 Experiência acadêmica & profissional
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Modal content -->
+                        <div class="container-fluid">
+                            <div class="row gy-3">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body d-flex flex-row">
+                                            <div class="container-fluid">
+                                                <div class="row pb-1">
+                                                    <div class="col-3">
+                                                        <div
+                                                            class="d-flex flex-column align-center h-100 justify-content-center">
+                                                            <div>
+                                                                <img src="/static/experience/espm.jpg" alt="ESPM"
+                                                                    class="rounded-circle w-75">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-start">
+                                                        <h5>ESPM</h5>
+                                                        <h6>Bacharelado em Sistemas de Informação</h6>
+                                                        <div>01/2022 - 12/2025</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="text-start">
+                                                        A formação me deu bases fortes das ferramentas e melhores
+                                                        práticas
+                                                        de engenharia de software, desenvolvimento web e engenharia de
+                                                        dados.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body d-flex flex-row">
+                                            <div class="container-fluid">
+                                                <div class="row pb-1">
+                                                    <div class="col-3">
+                                                        <div
+                                                            class="d-flex flex-column align-center w-75 h-100 justify-content-center">
+                                                            <div class="rounded-circle"
+                                                                style="background-color: black;">
+                                                                <img src="/static/experience/lihai.svg" alt="LiHai"
+                                                                    class="m-1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-start">
+                                                        <h5>LiHai</h5>
+                                                        <h6>Dev. Backend</h6>
+                                                        <div>01/2022 - atual</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="text-start">
+                                                        Automatizei a apuração massiva de critérios da gamificação de
+                                                        procedimentos de revendas de gás da Ultragaz. Foram entregues
+                                                        mais
+                                                        de 150 mil pontos para mais de 3000 revendas.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Knowledge modal -->
+        <div class="modal fade" id="knowledge-modal" tabindex="-1" aria-labelledby="knowledge-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">🖥️ Conhecimentos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Modal content -->
+                        <div class="container-fluid">
+                            <div class="row gy-3">
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Python"
+                                            data-bs-content="Eu utilizo para criar APIs REST, servir websites e fazer raspagem de dados rapidamente">
+                                            <i class="devicon-python-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Pandas"
+                                            data-bs-content="Em extração de dados é essencial usar pandas para fazer transformações necessárias nos dados em meus projetos de Python">
+                                            <i class="devicon-pandas-original-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Selenium"
+                                            data-bs-content="Uso para extrair dados a partir das páginas de um website">
+                                            <i class="devicon-selenium-original"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="FastAPI"
+                                            data-bs-content="Uso para criar sites, APIs REST e documentação rapidamente em projetos de Python">
+                                            <i class="devicon-fastapi-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="pytest"
+                                            data-bs-content="Uso para testar o meu código e APIs feitas em Python">
+                                            <i class="devicon-pytest-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="SQLAlchemy"
+                                            data-bs-content="Uso para integrar o banco de dados com minhas APIs e raspagens de dados em Python">
+                                            <i class="devicon-sqlalchemy-original-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Elixir"
+                                            data-bs-content="Utilizo para criar APIs REST e websites com alta disponibilidade e eficiência de recursos">
+                                            <i class="devicon-elixir-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Phoenix"
+                                            data-bs-content="Framework fullstack usado para criar APIs REST e websites robustos, com alta disponibilidade e atualizações em tempo real com Elixir">
+                                            <i class="devicon-phoenix-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="SQLite"
+                                            data-bs-content="Esse banco de dados uso sempre em projetos pequenos e pessoais, devida a facilidade e rapidez de usar">
+                                            <i class="devicon-sqlite-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="PostgreSQL"
+                                            data-bs-content="O banco de dados que normalmente uso em meus projetos. Uso para persistir dados de projetos">
+                                            <i class="devicon-postgresql-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-title="MySQL"
+                                            data-bs-content="Esse banco de dados utilizei em quase todos os projetos da faculdade">
+                                            <i class="devicon-mysql-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Javascript"
+                                            data-bs-content="Eu utilizo como a principal fonte de reatividade e interação dos meus websites">
+                                            <i class="devicon-javascript-plain"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-title="HTML"
+                                            data-bs-content="É a base fundamental para estruturar um website. Uso em todos meus websites">
+                                            <i class="devicon-html5-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-title="CSS"
+                                            data-bs-content="A ferramenta básica para estilizar websites. Uso quando é designs pré-feitos faltam aquele toque especial">
+                                            <i class="devicon-css3-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Typescript"
+                                            data-bs-content="Eu uso principalmente para desenvolvimento de APIs REST">
+                                            <i class="devicon-typescript-plain"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Bootstrap"
+                                            data-bs-content="Utilizo para criar websites com um design consistente e utilização intuitiva e acessível">
+                                            <i class="devicon-bootstrap-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="jQuery"
+                                            data-bs-content="Uso para facilitar o desenvolvimento de páginas com validação e interatividade">
+                                            <i class="devicon-jquery-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-title="Java"
+                                            data-bs-content="Eu utilizei para aprender os básicos de Programação Orientada a Objetos, Algoritmos e CRUD com APIs REST">
+                                            <i class="devicon-java-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Springboot"
+                                            data-bs-content="É o framework que uso para criar APIs REST, websites e integrar com um banco de dados">
+                                            <i class="devicon-spring-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projects modal -->
+        <div class="modal fade" id="projects-modal" tabindex="-1" aria-labelledby="project-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">👷‍♂️ Projetos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Modal content -->
+                        <div class="container-fluid">
+                            <div class="row gy-3">
+                                <div class="col-12">
+                                    <!-- Project cards -->
+                                    <div class="card border-dark border-2">
+                                        <img src="static/projects/iggpl.png" class="card-img-top" alt="IGGPL Website">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IGGPL - Raspagem de imóveis de luxo</h5>
+                                            <p class="card-text">Extração de imóveis de luxo de São Paulo, SP,
+                                                transformação com APIs do GCP e carregamento para uma API REST e website
+                                            </p>
+                                            <div class="container-fluid pt-2">
+                                                <div class="row">
+                                                    <!-- GitHub -->
+                                                    <div class="col">
+                                                        <a href="https://github.com/imlucasmarques/Luxury-Real-Estate-Data"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            class="btn btn-outline-dark fs-30px">
+                                                            <i class="bi bi-github"></i>
+                                                        </a>
+                                                    </div>
+                                                    <!-- Presentation -->
+                                                    <div class="col">
+                                                        <div class="col">
+                                                            <a href="https://drive.google.com/file/d/1jY30zxtq5F5oS47Ulbil65zf4zW3I0Xl/view?usp=sharing"
+                                                                target="_blank" rel="noopener noreferrer"
+                                                                class="btn  btn-outline-warning fs-30px">
+                                                                <i class="bi bi-easel"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card border-dark border-2">
+                                        <img src="static/projects/whhu.png" class="card-img-top" alt="WHHU Dashboard">
+                                        <div class="card-body">
+                                            <h5 class="card-title">WHHU - Estação meteorológica</h5>
+                                            <p class="card-text">Estação meteorológica que capta humidade e
+                                                temperatura
+                                                do ambiente e disponibiliza em uma API e um dashboard web</p>
+                                            <div class="container-fluid pt-2">
+                                                <div class="row">
+                                                    <!-- GitHub -->
+                                                    <div class="col">
+                                                        <a href="https://github.com/ryguigas0/whhu-espm" target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            class="btn btn-outline-dark fs-30px">
+                                                            <i class="bi bi-github"></i>
+                                                        </a>
+                                                    </div>
+                                                    <!-- Linkedin -->
+                                                    <div class="col">
+                                                        <a href="https://whhu-espm.glitch.me/" target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            class="btn  btn-outline-dark fs-30px">
+                                                            <i class="bi bi-display"></i>
+                                                        </a>
+                                                    </div>
+                                                    <!-- YouTube-->
+                                                    <div class="col">
+                                                        <a href="https://youtu.be/XUlu15k1XNk" target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            class="btn  btn-outline-danger fs-30px">
+                                                            <i class="bi bi-youtube"></i>
+                                                        </a>
+                                                    </div>
+                                                    <!-- Presentation -->
+                                                    <div class="col">
+                                                        <div class="col">
+                                                            <a href="https://drive.google.com/file/d/1sd7IQ8UheSxqd_TSX4FUfBhFivqKRAh2/view?usp=sharing"
+                                                                target="_blank" rel="noopener noreferrer"
+                                                                class="btn  btn-outline-warning fs-30px">
+                                                                <i class="bi bi-easel"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card border-dark border-2">
+                                        <img src="static/projects/labs_pgt.png" class="card-img-top"
+                                            alt="Gerenciador de PGT">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Gerenciador de PGTs </h5>
+                                            <p class="card-text">Um gerenciador de PGTs para automatizar criação de
+                                                PGTs, notas e atas</p>
+                                            <div class="container-fluid pt-2">
+                                                <div class="row">
+                                                    <!-- GitHub -->
+                                                    <div class="col">
+                                                        <a href="https://github.com/tech-espm/labs-pgt" target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            class="btn btn-outline-dark fs-30px">
+                                                            <i class="bi bi-github"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About modal -->
+        <div class="modal fade" id="about-modal" tabindex="-1" aria-labelledby="about-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">🤔 Quem sou eu?</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Modal content -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h2>A resposta curta</h2>
+                                <p class="fs-3 text-start">
+                                    Eu amo incorporar as
+                                    histórias de
+                                    pessoas
+                                    ao meu redor, programar e ser
+                                    saudável. <span class="fw-bold">Vamos trabalhar juntos?</span>
+                                </p>
+
+                                <h2>A resposta longa</h2>
+                                <p>
+                                    Adoro qualquer mídia que me conta uma história boa e ainda mais se eu possa
+                                    participar e
+                                    chamar meus amigos, como séries animadas (arcane, samurai de olhos azuis,
+                                    departamento
+                                    de
+                                    conspirações), jogos de computador (warframe, baldurs gate, celeste) e jogos de
+                                    mesa
+                                    (o
+                                    som
+                                    das seis, city of mist, ordem paranormal).
+                                </p>
+
+                                <p>
+                                    Também adoro fazer parte da história de outras pessoas por meio da programação
+                                    no
+                                    trabalho,
+                                    no acadêmico e no hobby. Eu não me limito sobre o que programar, porque eu quero
+                                    colocar
+                                    um
+                                    dedo em quase tudo. Também prezo por ouvir e entender bem as lições e
+                                    experiências
+                                    que
+                                    as
+                                    pessoas me contam e escrevem para aprender e nunca esquecer.
+                                </p>
+
+                                <p>
+                                    Gosto também de me manter saudável fazendo bastante exercício e comendo as
+                                    melhores
+                                    comidas
+                                    saudáveis e refletir bastante sobre como a minha cabeça, mente e corpo funcionam
+                                    juntos
+                                    para
+                                    aprender.
+
+                                    <span class="fw-bold">
+                                        Enfim, não esqueça de me contatar para eu conhecer a sua história e criarmos
+                                        um
+                                        projeto
+                                        juntos!
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
