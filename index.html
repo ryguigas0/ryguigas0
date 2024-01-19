@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guigadev</title>
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -13,10 +14,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/static/custom.css">
 
+    <!-- jquery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    <!-- <script>
-        $(window).on('load', () => $('#projects-modal').modal('show'))
-    </script> -->
+
+    <!-- DevIcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Popperjs -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(window).on('load', () => {
+            // Enable popovers
+            $('[data-bs-toggle="popover"]').map(function () {
+                return new bootstrap.Popover(this)
+            })
+
+            // Debug
+            $('#knowledge-modal').modal('show')
+        })
+    </script>
 </head>
 
 <body>
@@ -223,7 +245,194 @@
                     <div class="modal-body">
                         <!-- Modal content -->
                         <div class="container-fluid">
-                            Knowledge
+                            <div class="row gy-3">
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Python"
+                                            data-bs-content="Eu utilizo para criar APIs REST, servir websites e fazer raspagem de dados rapidamente">
+                                            <i class="devicon-python-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Pandas"
+                                            data-bs-content="Em extração de dados é essencial usar pandas para fazer transformações necessárias nos dados em meus projetos de Python">
+                                            <i class="devicon-pandas-original-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Selenium"
+                                            data-bs-content="Uso para extrair dados a partir das páginas de um website">
+                                            <i class="devicon-selenium-original"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="FastAPI"
+                                            data-bs-content="Uso para criar sites, APIs REST e documentação rapidamente em projetos de Python">
+                                            <i class="devicon-fastapi-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="pytest"
+                                            data-bs-content="Uso para testar o meu código e APIs feitas em Python">
+                                            <i class="devicon-pytest-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="SQLAlchemy"
+                                            data-bs-content="Uso para integrar o banco de dados com minhas APIs e raspagens de dados em Python">
+                                            <i class="devicon-sqlalchemy-original-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Elixir"
+                                            data-bs-content="Utilizo para criar APIs REST e websites com alta disponibilidade e eficiência de recursos">
+                                            <i class="devicon-elixir-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Phoenix"
+                                            data-bs-content="Framework fullstack usado para criar APIs REST e websites robustos, com alta disponibilidade e atualizações em tempo real com Elixir">
+                                            <i class="devicon-phoenix-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="SQLite"
+                                            data-bs-content="Esse banco de dados uso sempre em projetos pequenos e pessoais, devida a facilidade e rapidez de usar">
+                                            <i class="devicon-sqlite-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="PostgreSQL"
+                                            data-bs-content="O banco de dados que normalmente uso em meus projetos. Uso para persistir dados de projetos">
+                                            <i class="devicon-postgresql-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-title="MySQL"
+                                            data-bs-content="Esse banco de dados utilizei em quase todos os projetos da faculdade">
+                                            <i class="devicon-mysql-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Javascript"
+                                            data-bs-content="Eu utilizo como a principal fonte de reatividade e interação dos meus websites">
+                                            <i class="devicon-javascript-plain"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-title="HTML"
+                                            data-bs-content="É a base fundamental para estruturar um website. Uso em todos meus websites">
+                                            <i class="devicon-html5-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-title="CSS"
+                                            data-bs-content="A ferramenta básica para estilizar websites. Uso quando é designs pré-feitos faltam aquele toque especial">
+                                            <i class="devicon-css3-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Typescript"
+                                            data-bs-content="Eu uso principalmente para desenvolvimento de APIs REST">
+                                            <i class="devicon-typescript-plain"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Bootstrap"
+                                            data-bs-content="Utilizo para criar websites com um design consistente e utilização intuitiva e acessível">
+                                            <i class="devicon-bootstrap-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="jQuery"
+                                            data-bs-content="Uso para facilitar o desenvolvimento de páginas com validação e interatividade">
+                                            <i class="devicon-jquery-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-title="Java"
+                                            data-bs-content="Eu utilizei para aprender os básicos de Programação Orientada a Objetos, Algoritmos e CRUD com APIs REST">
+                                            <i class="devicon-java-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wcontent">
+                                        <button type="button" class="btn btn-outline-dark fs-5rem"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-title="Springboot"
+                                            data-bs-content="É o framework que uso para criar APIs REST, websites e integrar com um banco de dados">
+                                            <i class="devicon-spring-plain-wordmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -254,8 +463,8 @@
                                                 <div class="row">
                                                     <!-- GitHub -->
                                                     <div class="col">
-                                                        <a href="https://github.com/ryguigas0/whhu-espm" target="_blank"
-                                                            rel="noopener noreferrer"
+                                                        <a href="https://github.com/imlucasmarques/Luxury-Real-Estate-Data"
+                                                            target="_blank" rel="noopener noreferrer"
                                                             class="btn btn-outline-dark fs-30px">
                                                             <i class="bi bi-github"></i>
                                                         </a>
